@@ -9,7 +9,6 @@ module Authentication
   end
 
 
-
   def login(user)
     reset_session
     session[:current_user_id] = user.id
@@ -40,5 +39,5 @@ module Authentication
         redirect_to new_session_url
       end
     end
-    
+
 end
